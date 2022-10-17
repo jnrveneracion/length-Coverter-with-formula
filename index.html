@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>length-converter-with-formula</title>
+    <title>Length Converter with Formula</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
+    <div class="mainArea">
+        <div class="top">
+            <span class="topbtn" style="color: red;"></span>
+            <span class="topbtn"></span>
+            <span class="topbtn"></span>
+        </div>
+        <div class="section">
+            <h3>From:</h3>
+            <input type="number" name="from" id="fromLength">
+            <section>
+                <select class="choices" id="choicesA" onchange="activeColor(act = 'a')"> 
+                    <option value="0" selected="selected">Select Unit </option>
+                    <option value="1">[km]Kilometer</option>
+                    <option value="2">[m]Meter</option>
+                    <option value="3">[cm]Centimeter</option>
+                    <option value="4">[mm]Millimeter</option>
+                    <option value="5">[μm]Micrometer</option>
+                    <option value="6">[nm]Nanometer</option>
+                    <option value="7">[mi]Mile</option>
+                    <option value="8">[yd]Yard</option>
+                    <option value="9">[ft]Foot</option>
+                    <option value="10">[in]Inch</option>
+                    <option value="11">[nm]Nautical Mile</option>
+                </select>
+            </section>
+        </div>
+        <div class="equalSign">
+            <h3>
+                =
+            </h3>
+        </div>
+        <div class="section">
+            <h3>To:</h3>
+            <input type="number" name="to" id="toLength">
+            <section>
+                <select class="choices" id="choicesB" onchange="activeColor(act = 'b')"> 
+                    <option value="0" selected="selected">Select Unit </option>
+                    <option value="1">[km]Kilometer</option>
+                    <option value="2">[m]Meter</option>
+                    <option value="3">[cm]Centimeter</option>
+                    <option value="4">[mm]Millimeter</option>
+                    <option value="5">[μm]Micrometer</option>
+                    <option value="6">[nm]Nanometer</option>
+                    <option value="7">[mi]Mile</option>
+                    <option value="8">[yd]Yard</option>
+                    <option value="9">[ft]Foot</option>
+                    <option value="10">[in]Inch</option>
+                    <option value="11">[nm]Nautical Mile</option>
+                </select>
+            </section>
+        </div>
+        <div class="bot">
+            <span class="botSpan" id="bot"> Formula: </span>
+            <span class="botSpanB"> Vkjjbdfdjsbfhdsj</span>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
